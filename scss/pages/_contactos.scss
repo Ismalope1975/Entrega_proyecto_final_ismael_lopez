@@ -1,0 +1,35 @@
+  .contact-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+     width: 40%;
+}
+  .background_contacto {
+    background-image: url('../images/puerta_grande.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5%;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .background_contacto {
+      justify-content: center; 
+      padding: 1%;
+    }
+  } 
+ 
+    @media (max-width: 480px) {
+      .background_contacto {
+      justify-content: center; 
+      padding: 1%; 
+      height: auto; 
+    }
+    .contact-form {
+      width: 100%; 
+    }
+  }

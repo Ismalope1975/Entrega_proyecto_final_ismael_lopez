@@ -1,0 +1,386 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .body_index {
+  height: 420vh;
+}
+body .body_ventas {
+  height: 110vh;
+}
+body .body_nosotros {
+  height: 220vh;
+}
+
+header .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  position: relative;
+}
+header .navbar-nav .nav-link:hover {
+  color: #115f0e;
+  transform: scale(1.2);
+}
+header .navbar-nav .dropdown-item {
+  font-size: 1rem;
+}
+header .navbar-nav .dropdown-item:hover {
+  font-size: 20px;
+  color: green;
+  transition: all 0.5s;
+}
+header .breadcrumb-nav {
+  position: absolute;
+  top: 0;
+  padding-top: 1%;
+  right: 20;
+}
+
+main .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding-top: 1%;
+  height: 80vh;
+}
+main .border-brown {
+  border-bottom: 1px solid brown;
+  border-top: 1px solid brown;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer .embed-responsive {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+footer nav ul li a {
+  transition: color 0.3s, border-bottom 0.3s;
+}
+footer .social-icons a {
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+footer .social-icons a:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+
+.card {
+  flex: 1 0 30%;
+  margin: 10px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.consultar-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.img-hover {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-hover:hover {
+  border: 2px solid white;
+  transform: translateY(-10px);
+}
+
+.catalogo_style_index {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.btn_cards {
+  padding-left: 1%;
+  padding-top: 0 !important;
+  padding-right: 1%;
+  padding-bottom: 0 !important;
+}
+
+.form-select_ventas {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.texto_inicial {
+  color: #ffffff;
+  background-color: rgba(15, 5, 5, 0.2117647059);
+}
+
+.main-bg {
+  background-image: url("../images/Bridge_Laguna_Garzón¡.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  color: rgba(210, 219, 228, 0);
+}
+
+.card-img-top,
+.main-img {
+  max-width: 400px;
+  max-height: 280x;
+  width: 100%;
+}
+
+.imagen_derecha {
+  max-width: auto;
+  max-height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.bg-image {
+  background-image: url("../images/propiedades/propiedades_venta/casaref_05920.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* Aspecto de imagen 16:9 */
+}
+
+.icon {
+  display: flex;
+  align-items: left;
+  margin-bottom: 10%;
+  padding-top: 5%;
+}
+
+.icon img {
+  margin-right: 8%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 5px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-border {
+  border-top: 1px solid rgb(82, 97, 136);
+  border-bottom: 1px solid rgb(82, 97, 136);
+  padding: 1%;
+}
+
+.hover-image:hover {
+  transform: scale(1.03);
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.background_contacto {
+  background-image: url("../images/puerta_grande.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5%;
+}
+
+@media (max-width: 768px) {
+  .background_contacto {
+    justify-content: center;
+    padding: 1%;
+  }
+}
+@media (max-width: 480px) {
+  .background_contacto {
+    justify-content: center;
+    padding: 1%;
+    height: auto;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+.main_mapa, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container_mapa {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../images/puerta_grande.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.tree li {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 5px 0 5px;
+  transition: all 0.5s;
+}
+
+.tree li::before, .tree li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 2px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid #ccc;
+}
+
+.tree li:only-child::after, .tree li:only-child::before {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.tree li:first-child::before, .tree li:last-child::after {
+  border: 0 none;
+}
+
+.tree li:last-child::before {
+  border-right: 2px solid #ccc;
+  border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.tree ul ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+
+.tree li a {
+  border: 2px solid #ccc;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #9cd9dd;
+  font-family: arial, verdana, tahoma;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.tree li a:hover, .tree li a:hover + ul li a {
+  background: #c8e4f8;
+  color: #000;
+  border: 2px solid #94a0b4;
+}
+
+.tree li a:hover + ul li::after, .tree li a:hover + ul li::before, .tree li a:hover + ul::before, .tree li a:hover + ul ul::before {
+  border-color: #94a0b4;
+}
+
+@media (max-width: 600px) {
+  .tree ul {
+    padding: 0.5em;
+  }
+  .tree li {
+    padding-left: 0.5em;
+  }
+}
+@media (max-width: 768px) {
+  .col-md-4.col-lg-2.pt-4.text-align-right.bg-success-subtle {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .background_contacto {
+    justify-content: center;
+    padding: 1%;
+  }
+}
+@media (max-width: 480px) {
+  .background_contacto {
+    justify-content: center;
+    padding: 1%;
+    height: auto;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .imagen_derecha {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .imagen_derecha {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

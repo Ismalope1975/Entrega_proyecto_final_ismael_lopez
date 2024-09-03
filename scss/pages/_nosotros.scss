@@ -1,0 +1,31 @@
+  .texto_inicial {
+     color: #ffffff;
+     background-color: #0f050536;
+}
+
+
+ .main-bg {
+    background-image: url('../images/Bridge_Laguna_Garzón¡.webp'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    height: auto; 
+    width: 100%; 
+    color: #d2dbe400;
+}
+
+  .card-img-top,
+  .main-img {
+      max-width: 400px;
+      max-height: 280px;
+      width: 100%;
+      
+  }
+  .imagen_derecha{
+      max-width: auto;
+      max-height: auto;
+      width: 100%;
+      height: auto;
+  }
+

@@ -1,0 +1,59 @@
+    .bg-image {
+        background-image: url('../images/propiedades/propiedades_venta/casaref_05920.webp');
+        background-size: cover; 
+        background-position: center; 
+        width: $width-porcentaje; 
+        height: 0;
+        padding-top: 56.25%; /* Aspecto de imagen 16:9 */
+    }
+        
+    .icon {
+    display: flex;
+    align-items:left;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    }
+    .icon img {
+    margin-right: 8%;
+    }
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px;
+    }
+    .grid-container img {
+    width: $width-porcentaje;
+    height: $height-porcentaje;
+    }
+    .custom-border {
+    border-top: 1px solid rgb(82, 97, 136);
+    border-bottom: 1px solid rgb(82, 97, 136);;
+    padding:1%
+    }
+         
+    .hover-image:hover {
+    transform: scale(1.03);
+   
+    }
+        
+    .iframe-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+    
+    

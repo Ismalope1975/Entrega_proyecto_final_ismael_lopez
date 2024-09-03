@@ -1,0 +1,15 @@
+main .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding-top: 1%;
+  height: 80vh;
+}
+main .border-brown {
+  border-bottom: 1px solid brown;
+  border-top: 1px solid brown;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
